@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="tab" data-tab="home">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="tab" data-tab="profile">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="tab" data-tab="notification">
+        <i class="fas fa-bell"></i>
+      </div>
+      <div class="tab" data-tab="message">
+        <i class="fas fa-comment"></i>
+      </div>
+      <div class="tab" data-tab="settings">
+        <i class="fas fa-cog"></i>
+      </div>
+      <div class="tab" data-tab="video">
+        <i class="fas fa-video"></i>
+      </div>
+      <div class="tab" data-tab="graphics">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="C:\Users\UTS\Desktop\Portfolio\my_photo.jpg" alt="Profile Image">
+        </div>
+        <div class="quote">
+          <p>"It always seems impossible until it's done."</p>
+          <span>– Nelson Mandela</span>
+        </div>
+      </div>
+
+      <!-- Tab content -->
+      <div class="tab-content">
+       
+        <!-- Profile Content -->
+        <div id="profile" class="tab-pane hidden">
+          <h2>Who is me?</h2>
+          <p>I’m Ravi, a student from Nepal with a wide range of interests and hobbies. When I’m not focused on my studies, I enjoy expressing my creativity through video editing, graphic design, and art drawing. I find great joy in bringing ideas to life visually, whether it’s through editing videos or creating stunning designs. Gaming is also a big part of my life, though I keep it more for personal enjoyment rather than content creation. My academic journey is important to me, and I’m putting in the effort to excel, especially as I prepare for my BCA entrance exam with the goal of earning a scholarship. Balancing my love for creative pursuits with my studies keeps me motivated and excited for what’s ahead.
+            <br><br> <button   data-tab="home" class="tab">Back to home page</button>
+          </p>
+        </div>
+        <!-- Notification Content -->
+        <div id="notification" class="tab-pane hidden">
+          <h2>Notifications</h2>
+          <p>This is the notifications tab where you can show user alerts.</p>
+        </div>
+        <!-- Message Content -->
+        <div id="message" class="tab-pane hidden">
+          <h2>Send me a message?</h2>
+          <div class="message-box">
+            
+            <textarea id="message" placeholder="Write your message here..."></textarea>
+            <button id="submitMessage">Submit</button>
+          </div>
+          <br> <button   data-tab="home" class="tab">Back to home page</button>
+        </div>
+        <!-- Settings Content -->
+        <div id="settings" class="tab-pane hidden">
+          <h2>Settings</h2>
+        <label for="themeColorPicker">Change Theme Color: </label>
+        <input type="color" id="themeColorPicker" value="#6c63ff"> <br><br>
+        <label for="textColorPicker">Change Text Color: </label>
+        <input type="color" id="textColorPicker" value="#000000" ><br><br>
+
+            <label for="fontSelector">Change Font Style: </label>
+            <select id="fontSelector">
+                <option value="'Arial, sans-serif'">Arial</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Courier New', monospace">Courier New</option>
+                <option value="'Georgia', serif">Georgia</option>
+                <option value="'Roboto', sans-serif">Roboto</option>
+            </select>
+            <br><br> <button   data-tab="home" class="tab">Back to home page</button>
+
+        </div>
+        
+        <!-- Graphics Content -->
+        <div id="graphics" class="tab-pane hidden">
+          <h2>YouTube Thumbnails</h2>
+          <div class="image-grid">
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z\polished/1.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z\polished/2.jpg" alt="Image 2"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z\polished/3.jpg" alt="Image 3"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z\polished/4.jpg" alt="Image 4"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z/1.jpg" alt="Image 5"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z/2.jpg" alt="Image 6"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z/3.jpg" alt="Image 7"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z/4.jpg" alt="Image 8"></div>
+            <div class="image-container"><img src="C:\Users\UTS\Videos\z/5.jpg" alt="Image 9"></div>
+          </div>
+          <h2>Product ad</h2>
+          <div class="image-grid">
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            <div class="image-container"><img src="D:\download folder/ad.jpg" alt="Image 1"></div>
+            </div>
+
+           <!-- Fullscreen Image Viewer -->
+  <div class="fullscreen-viewer" id="fullscreenViewer">
+    <button id="closeViewer">&times;</button>
+    <img id="fullscreenImage" src="" alt="Fullscreen Image">
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Ravi Kalauni</p>
+      <p>Phone: +9779812724993</p>
+      <p>Email: unotat5@gmail.com</p>
+      <p>
+        Facebook: <a href="https://www.facebook.com/profile.php?id=100087411885184" target="_blank">Profile</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/ravi-kalauni-66044731b/" target="_blank">Profile</a>
+      </p>
+      <p>“let’s collab”</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

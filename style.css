@@ -1,0 +1,449 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4A148C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    background-color: #26012e;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    border-radius: 40px;
+    
+  }
+  
+  .header i {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  p {
+    text-align: justify;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    margin-right: 70px;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: fill;
+  }
+  
+  .quote {
+    text-align: right;
+    max-width: 900px;
+  }
+  
+  .quote p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .quote span {
+    font-style: italic;
+  }
+  
+  .tab-content {
+    margin: px 0;
+    padding: 15px;
+    color: black;
+    background-color: #f3e0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tab-content .tab-pane {
+    display: none;
+    text-align: left;
+  }
+  
+  .tab-content .tab-pane.active {
+    display: block;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tab {
+    margin: 0 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .tab i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .footer p a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  :root {
+    --primary-color: #450652; /* Default theme color */
+    --secondary-color: #ffffff;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.tabs {
+    background-color: var(--secondary-color);
+}
+:root {
+    --font-family: 'Arial'; /* Default font */
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, p, .tabs {
+    font-family: var(--font-family);
+}
+#textColorPicker{
+    border: none;
+}
+#themeColorPicker{
+    border: none;
+}
+button {
+    border: none;
+    background-color: rgb(0, 94, 218);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Responsive Design: Profile Image */
+@media (max-width: 768px) {
+    /* Adjust profile image size */
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+    }
+  
+    /* Adjust the font size of the quote */
+    .quote p {
+      font-size: 1.5rem;
+      width: 80%;
+      text-align: left;
+      margin-left: 20px;
+    }
+  
+    /* Make content sections stack vertically */
+    .profile {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Tab layout adjustments for mobile */
+    .header {
+      flex-direction: row;
+      margin-bottom: 30px;
+      padding: 0px;
+      border-radius: 0px;
+    }
+  
+    /* Adjust tab icons for smaller screens */
+    .header i {
+      font-size: 1.5rem;
+    }
+  
+    /* Center tab content */
+    .tab-content {
+      margin-left: 40px;
+      padding: 6px;
+      background-color: #f3e0ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      font-size: 12px;
+      width: 70%;
+    }
+  
+    /* Remove large margins and adjust button size */
+    .quote button {
+      padding: 10px;
+    }
+  
+    /* Adjust footer layout */
+    .footer p {
+      font-size: 0.8rem;
+    }
+  
+    /* Tabs should be displayed as a stack of items for mobile */
+    .tabs {
+      display: block;
+      text-align: center;
+    }
+  
+    /* Adjust the tab containers and ensure they fit on smaller screens */
+    .tab {
+      margin: 10px 0;
+    }
+  
+    /* Modify the text input and selectors */
+    #themeColorPicker, #textColorPicker {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Larger screen sizes for tablets and desktop */
+  @media (min-width: 769px) {
+    /* Keep profile image size for larger screens */
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      margin-right: 70px;
+    }
+  
+    /* Ensure that the quote text fits better */
+    .quote p {
+      font-size: 2rem;
+    }
+  
+    /* Ensure the header is on the same row and has space between items */
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .header i {
+      font-size: 2rem;
+    }
+  
+    /* Tab layout for larger screens */
+    .tab-content {
+      margin: 20px 0;
+      padding: 15px;
+    }
+  }
+  .message-box {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f3e0ff;
+    border-radius: 8px;
+    
+  }
+  
+  .message-box label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .message-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #f3e0ff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+  
+  .message-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message-box button:hover {
+    background-color: #45a049;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .video-thumbnail {
+    background-color: #999999;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .video-thumbnail img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .video-thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  #popupVideo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  #closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    background-color: blue;
+    border-radius: 8px;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+
+  .image-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  /* Fullscreen Viewer */
+.fullscreen-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .fullscreen-viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s;
+    cursor: grab;
+  }
+  
+  #closeViewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .fullscreen-viewer.active {
+    display: flex;
+  }
+  
